@@ -2,7 +2,7 @@ const express = require('express');
 const helmet = require('helmet');
 const { authRouter, serviceRouter } = require('./routes');
 const logger = require('./logger');
-const { setAdmin } = require('./services');
+const { setAdmin } = require('./cache');
 
 const { PORT } = process.env;
 
