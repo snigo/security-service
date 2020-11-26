@@ -1,0 +1,40 @@
+{
+  "name": "security-service",
+  "version": "0.1.0",
+  "description": "Security service to work in pair with auth service",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon --exec \"DOTENV_CONFIG_PATH=$(pwd)/.env.local node -r dotenv/config\" index.js",
+    "start": "node index.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/snigo/security-service.git"
+  },
+  "keywords": [
+    "security"
+  ],
+  "author": "snigo",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/snigo/security-service/issues"
+  },
+  "homepage": "https://github.com/snigo/security-service#readme",
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "eslint": "^7.14.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "nodemon": "^2.0.6"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "helmet": "^4.2.0",
+    "ioredis": "^4.19.2",
+    "isomorphic-unfetch": "^3.1.0",
+    "jsonwebtoken": "^8.5.1",
+    "uuid": "^8.3.1",
+    "winston": "^3.3.3"
+  }
+}
